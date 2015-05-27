@@ -1,0 +1,4 @@
+name = demo_altered
+description = Demo_altered description
+package = Demo
+core = 7.x

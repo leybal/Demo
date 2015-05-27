@@ -1,0 +1,133 @@
+<?php
+
+function demoform_menu() {
+    $items['demo/form'] = array(
+        'title' => 'Demo form',
+        'page callback' => 'demoform_callback',
+        'access callback' => TRUE,
+    );
+    return $items;
+}
+
+
+function demoform_form ($form, &$form_state){
+    $form['#prefix'] = '<div class="my-form-class">';
+    $form['#suffix'] = '</div>';
+
+    $form['text1'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Введіть текст:'),
+        //'#default_value' => t('Черкаси'),
+        //'#required' => TRUE,
+    );
+
+    $active = array(0 => t('Closed'), 1 => t('Active'));
+    $form['settings']['active'] = array(
+        '#type' => 'radios',
+        '#title' => t('Poll status'),
+        '#default_value' => /*isset($node->active) ? $node->active :*/ 1,
+        '#options' => $active,
+        '#description' => t('When a poll is closed, visitors can no longer vote for it.' . '<hr/>'),
+        '#allowed_radio' => "0",
+        '#element_validate' => array('radios_validate'),
+    );
+
+    $form['selected'] = array(
+        '#type' => 'select',
+        '#title' => 'Selected',
+        '#options' => array( t('Yes'), t('No') ),
+    );
+
+    $form['name'] = array(
+        '#type' => 'fieldset',
+        '#title' => t('Name'),
+        '#collapsible' => TRUE,
+        '#collapsed' => FALSE,
+    );
+    $form['name']['first'] = array(
+        '#type' => 'textfield',
+        '#title' => t('First name'),
+    );
+    $form['name']['last'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Last name'),
+    );
+
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Submit'),
+    );
+    return $form;
+}
+
+/* FORM_ALTER */
+
+function demoform_form_demoform_form_alter(&$form, &$form_state, $form_id) {
+    $form['text2'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Alter text:'),
+        '#weight' => 0,
+    );
+    $form['text1'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Введіть текст:'),
+        //'#default_value' => t('Черкаси'),
+        '#required' => TRUE,
+    );
+
+}
+
+//function demoform_form_alter(&$form, &$form_state, $form_id) {
+//    $form['alter'] = array(
+//        '#type' => 'textfield',
+//        '#title' => t('Alter textfield'),
+//        '#weight' => -5
+//    );
+//    print_r ('Massage');
+//    drupal_set_message($form_id);
+//}
+
+//function demoform_form_demoform_form_alter(&$form, &$form_state, $form_id) {
+//    // Modification for the form with the given form ID goes here. For example, if
+//    // FORM_ID is "user_register_form" this code would run only on the user
+//    // registration form.
+//
+//    // Add a checkbox to registration form about agreeing to terms of use.
+//    $form ['terms_of_use'] = array(
+//        '#type' => 'checkbox',
+//        '#title' => t("I agree with the website's terms and conditions."),
+//        '#required' => TRUE,
+//    );
+//}
+
+/* Рендеринг формы */
+
+function demoform_callback () {
+    $form = drupal_get_form('demoform_form');
+    //$form = drupal_render($form);
+    return $form;
+}
+
+/* Валидация полей и формы в целом */
+function radios_validate($element, $form_state) {
+    if ($form_state['values']['active'] != $element['#allowed_radio'])
+    {
+       form_error($element, t('You must enter spicy or sweet. '));
+    }
+}
+
+function demoform_form_validate($form, &$form_state){
+    if(mb_strlen($form_state['values']['text1'])<3){
+        form_set_error('text1', t('Занадтто коротка назва міста.'));
+    }
+}
+
+function demoform_form_submit ($form, &$form_state) {
+    $text1 = $form_state['values']['text1'];
+    //debug($form_state['values']);
+    if ($text1) {
+        drupal_set_message(t('Налаштування збережено.'));
+    }
+}
+
+?>

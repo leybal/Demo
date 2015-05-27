@@ -1,0 +1,15 @@
+<?php
+
+function demo_altered_menu_alter(&$items) {
+    if (!empty($items['demo/demo_original'])) {
+        $items['demo/demo_altered'] = $items['demo/demo_original'];
+        $items['demo/demo_original']['title'] = 'Menu item altered by hook_menu_alter()';
+        $items['demo/demo_original']['page callback'] = '_accesscheck';
+    }
+}
+
+function _accesscheck () {
+    return t('Text of demo altered');
+}
+
+?>

@@ -1,0 +1,75 @@
+<?php
+
+/* Implements hook_block_info() */
+function block1_block_info () {
+    $blocks['block1'] = array(
+        'info' => t('Block1`s Title in block list'),
+        'cache' => DRUPAL_NO_CACHE,
+        'status' => TRUE,
+        'region' => 'sidebar_first',
+        'weight' => 3,
+        //'visibility' => BLOCK_VISIBILITY_LISTED,
+        //'pages' => 'node/*',
+    );
+    return $blocks;
+}
+
+
+/* Implements hook_block_configure() */
+function block1_block_configure($delta = '') {
+    $form = array();
+    switch($delta) {
+        case 'block1':
+            $form['block1_conf'] = array(
+                '#type' => 'textfield',
+                '#title' => 'Block1`s configure',
+            );
+            break;
+    }
+    return $form;
+}
+
+/* Implements hook_block_save() */
+function block1_block_save($delta = '', $edit = array()) {
+    if ($delta == 'block1') {
+        variable_set('block1_conf_from_DB', $edit['block1_conf']);
+    }
+}
+
+
+/* Implements hook_block_view() */
+function block1_block_view ($delta = '') {
+    switch($delta) {
+        case 'block1':
+            $block['subject'] = t('Subject of block1');
+            $block['content'] = block1_content($delta);
+            break;
+    }
+    return $block;
+}
+
+/* A module-defined block content function. */
+function block1_content($which_block) {
+    switch ($which_block) {
+        case 'block1':
+            $result = array(
+                '#markup' => variable_get('block1_conf_from_DB') .
+                    '<br>' . t('This block was created at %time',
+                        array('%time' => date('c'))
+                    )
+                );
+            break;
+    }
+    return $result;
+}
+
+/* hook_block_view_MODULE_DELTA_alter */
+function block1_block_view_block1_block1_alter(&$data, $block) {
+    if (drupal_is_front_page()) {
+        $data['content'] = array(
+            '#markup' => 'Alter cotent ' . '<br>' . variable_get('block1_conf_from_DB')
+        );
+    }
+}
+
+?>

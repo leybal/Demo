@@ -1,0 +1,4 @@
+name = multistep
+description = An example of a multistep form.
+package = Demo
+core = 7.x

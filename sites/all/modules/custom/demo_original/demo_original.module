@@ -1,0 +1,16 @@
+<?php
+
+function demo_original_menu() {
+    $items['demo/demo_original'] = array(
+        'title' => 'Demo original',
+        'page callback' => 'demo_original_callback',
+        'access callback' => TRUE,
+    );
+    return $items;
+}
+
+function demo_original_callback () {
+    return t('Text of demo original');
+}
+
+?>

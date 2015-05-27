@@ -1,0 +1,78 @@
+<?php
+
+/**
+
+ * Реализация hook_menu().
+
+ */
+
+function form_example_dynamic_menu() {
+ $items['form_example_dynamic'] = array(
+     'title' => t('Form Example Dynamic Form'),
+     'page callback' => 'drupal_get_form',
+     'page arguments' => array('form_example_dynamic_form'),
+     'access callback' => TRUE,
+     'type' => MENU_NORMAL_ITEM
+ );
+ return $items;
+}
+
+function form_example_dynamic_form($form, &$form_state)
+{
+ $form['room_type'] = array(
+     '#type' => 'radios',
+     '#options' => drupal_map_assoc(array(t('Study Room'),
+         t('Small Conference Room'), t('Board Room'))),
+     '#title' => t('What type of room do you require?')
+ );
+
+ $form['study_room'] = array(
+     '#type' => 'fieldset',
+     '#title' => t('Study Room Details'),
+     '#states' => array(
+         'visible' => array(
+             ':input[name="room_type"]' => array('value' => t('Study Room')),
+         ),
+     ),
+ );
+
+ $form['study_room']['equipment'] = array(
+     '#type' => 'checkboxes',
+     '#options' => drupal_map_assoc(array(t('Chairs'), t('PC'))),
+     '#title' => t('What equipment do you need?'),
+     '#states' => array(
+         'visible' => array( // Выполняемое действие.
+             ':input[name="room_type"]' => array('value' => t('Study Room')),
+         ),
+     ),
+ );
+
+ $form ['study_room']['text1'] = array(
+     '#type' => 'textfield',
+     '#title' => t('Enter your text:'),
+     //'#default_value' => t('Черкаси'),
+     '#weight' => -1,
+     '#states' => array(
+         'visible' => array( // Выполняемое действие.
+             ':input[name="room_type"]' => array('value' => t('Study Room')),
+         ),
+     ),
+ );
+
+ $form['submit'] = array(
+     '#type' => 'submit',
+     '#value' => t('Submit your information'),
+ );
+
+ return $form;
+}
+
+function form_example_dynamic_form_submit($form, &$form_state) {
+
+ drupal_set_message(t('Submitting values: @values', array('@values' =>
+
+     var_export($form_state['values'], TRUE))));
+
+}
+
+ ?>

@@ -1,0 +1,151 @@
+<?php
+
+
+function multistep_menu() {
+    $items['demo/multistep'] = array(
+        'title' => 'Multistep form',
+        'page callback' => 'drupal_get_multistep_form',
+        'page arguments' => array('form_example_tutorial_8'),
+        'access callback' => TRUE,
+        'description' => 'Tutorial 8: Basic multistep form',
+    );
+    return $items;
+}
+
+function form_example_tutorial_8($form, &$form_state) {
+
+    // Display page 2 if $form_state['page_num'] == 2
+    if (!empty($form_state['page_num']) && $form_state['page_num'] == 2) {
+        return form_example_tutorial_8_page_two($form, $form_state);
+    }
+
+    // Otherwise we build page 1.
+    $form_state['page_num'] = 1;
+
+    $form['description'] = array(
+        '#type' => 'item',
+        '#title' => t('A basic multistep form (page 1)'),
+    );
+
+    $form['first'] = array(
+        '#type' => 'textfield',
+        '#title' => t('First name'),
+        '#description' => "Please enter your first name.",
+        '#size' => 20,
+        '#maxlength' => 20,
+        '#required' => TRUE,
+        '#default_value' => !empty($form_state['values']['first']) ? $form_state['values']['first'] : '',
+    );
+    $form['last'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Last name'),
+        '#default_value' => !empty($form_state['values']['last']) ? $form_state['values']['last'] : '',
+    );
+    $form['year_of_birth'] = array(
+        '#type' => 'textfield',
+        '#title' => "Year of birth",
+        '#description' => 'Format is "YYYY"',
+        '#default_value' => !empty($form_state['values']['year_of_birth']) ? $form_state['values']['year_of_birth'] : '',
+    );
+    $form['next'] = array(
+        '#type' => 'submit',
+        '#value' => 'Next >>',
+        '#submit' => array('form_example_tutorial_8_next_submit'),
+        '#validate' => array('form_example_tutorial_8_next_validate'),
+    );
+    return $form;
+}
+
+/**
+ * Returns the form for the second page of form_example_tutorial_8().
+ *
+ * @ingroup form_example
+ */
+function form_example_tutorial_8_page_two($form, &$form_state) {
+    $form['description'] = array(
+        '#type' => 'item',
+        '#title' => t('A basic multistep form (page 2)'),
+    );
+
+    $form['color'] = array(
+        '#type' => 'textfield',
+        '#title' => t('Favorite color'),
+        '#required' => TRUE,
+        '#default_value' => !empty($form_state['values']['color']) ? $form_state['values']['color'] : '',
+    );
+    $form['submit'] = array(
+        '#type' => 'submit',
+        '#value' => t('Submit'),
+        '#submit' => array('form_example_tutorial_8_page_two_submit'),
+    );
+    $form['back'] = array(
+        '#type' => 'submit',
+        '#value' => t('<< Back'),
+        '#submit' => array('form_example_tutorial_8_page_two_back'),
+        // We won't bother validating the required 'color' field, since they
+        // have to come back to this page to submit anyway.
+        '#limit_validation_errors' => array(),
+    );
+    return $form;
+}
+
+
+/**
+ * Validate handler for the next button on first page.
+ *
+ * @ingroup form_example
+ */
+function form_example_tutorial_8_next_validate($form, &$form_state) {
+    $year_of_birth = $form_state['values']['year_of_birth'];
+    if ($year_of_birth && ($year_of_birth < 1900 || $year_of_birth > 2000)) {
+        form_set_error('year_of_birth', t('Enter a year between 1900 and 2000.'));
+    }
+}
+
+/**
+ * Submit handler for form_example_tutorial_8() next button.
+ *
+ * Capture the values from page one and store them away so they can be used
+ * at final submit time.
+ *
+ * @ingroup form_example
+ */
+function form_example_tutorial_8_next_submit($form, &$form_state) {
+
+    // Values are saved for each page.
+    // to carry forward to subsequent pages in the form.
+    // and we tell FAPI to rebuild the form.
+    $form_state['page_values'][1] = $form_state['values'];
+
+    if (!empty($form_state['page_values'][2])) {
+        $form_state['values'] = $form_state['page_values'][2];
+    }
+
+    // When form rebuilds, it will look at this to figure which page to build.
+    $form_state['page_num'] = 2;
+    $form_state['rebuild'] = TRUE;
+}
+
+/**
+ * Back button handler submit handler.
+ *
+ * Since #limit_validation_errors = array() is set, values from page 2
+ * will be discarded. We load the page 1 values instead.
+ *
+ * @ingroup form_example
+ */
+function form_example_tutorial_8_page_two_back($form, &$form_state) {
+    $form_state['values'] = $form_state['page_values'][1];
+    $form_state['page_num'] = 1;
+    $form_state['rebuild'] = TRUE;
+}
+
+
+
+function drupal_get_multistep_form () {
+    $form = drupal_get_form('form_example_tutorial_8');
+    //$form = drupal_render($form);
+    return $form;
+}
+
+?>

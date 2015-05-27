@@ -1,0 +1,4 @@
+name = themehook
+description = themehook description
+package = Demo
+core = 7.x

@@ -1,0 +1,4 @@
+name = demoform
+description = Demo_form description
+package = Demo
+core = 7.x

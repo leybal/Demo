@@ -1,0 +1,31 @@
+<?php
+
+function themehook_menu() {
+    $items['demo/themehook'] = array(
+        'title' => 'Hook Theme',
+        'page callback' => 'themehook_callback',
+        'access callback' => TRUE,
+    );
+    return $items;
+}
+
+/**
+ * Implements hook_theme().
+ *
+ */
+function themehook_callback() {
+    $output = theme('themehook_template', array('node' => NULL));
+    return  $output;
+}
+
+function themehook_theme() {
+    return array(
+        'themehook_template' => array(
+            'template' => 'themehook-div',
+            'variables' => array('variable' => 'Some text from themehook.module!')
+        )
+    );
+}
+
+
+?>
