@@ -1,0 +1,32 @@
+<?php
+
+function alter_rad_menu() {
+    $items['alter_rad'] = array(
+        'title' => t('Alter radios'),
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('alter_rad_form'),
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM
+    );
+    return $items;
+}
+
+function alter_rad_form($form, &$form_state)
+{
+    $form['radios'] = array(
+        '#type' => 'radios',
+        '#title' => 'Question text',
+        '#options' => array(
+            '1' => t('yes'),
+            '0' => t('no')
+        ),
+
+        //'#theme' => 'alter_rad',
+    );
+
+    return $form;
+}
+
+
+
+?>

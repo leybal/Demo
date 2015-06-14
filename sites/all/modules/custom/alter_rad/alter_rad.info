@@ -1,0 +1,4 @@
+name = alter_rad
+description = Alter_rad description
+package = Demo
+core = 7.x
