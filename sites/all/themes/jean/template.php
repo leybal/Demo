@@ -1,4 +1,5 @@
 <?php
+
 function jean_radios($variables) {
     $element = $variables ['element'];
     $attributes = array();
@@ -17,6 +18,3 @@ function jean_radios($variables) {
     }
     return '<div' . drupal_attributes($attributes) . '>' . (!empty($element ['#children']) ? $element ['#children'] : '') . '</div>';
 }
-
-
-?>

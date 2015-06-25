@@ -1,0 +1,5 @@
+name = cajax
+description = cajax description
+package = Demo
+core = 7.x
+dependencies[] = ctools
