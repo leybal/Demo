@@ -1,3 +1,3 @@
 # Demo
 
-> CTools ajax
+> Custom pane content type module on Ctools
