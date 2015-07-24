@@ -1,0 +1,8 @@
+name = custom_handler1
+core = 7.x
+package = Demo
+
+dependencies[] = views
+
+files[] = custom_handler1.inc
+files[] = custom_handler1_handler_filter_field_count.inc

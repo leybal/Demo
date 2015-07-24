@@ -1,9 +1,0 @@
-﻿name = custom_vHandler
-description = Views handler
-package = Demo
-core = 7.x
-dependencies[] = ctools
-dependencies[] = views
-
-files[] = custom_vHandler.inc
-
