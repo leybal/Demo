@@ -1,0 +1,9 @@
+core = "7.x"
+name = "Filtres listes sur intervalles"
+description = "Filtres sur Intervalles"
+package = "Numerizen"
+project = "interval_select"
+version = "7.x-0.1"
+files[] = "interval_select_handler_prix.inc"
+files[] = "interval_select_handler_surface.inc"
+

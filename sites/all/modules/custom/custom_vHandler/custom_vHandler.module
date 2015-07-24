@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * Implements hook_views_api().
+ */
+
+function custom_vHandler_views_api() {
+  return array(
+    'api' => 3,
+  );
+}
+
+
+?>
