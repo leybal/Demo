@@ -4,5 +4,5 @@ package = Demo
 
 dependencies[] = views
 
-files[] = custom_handler1.inc
-files[] = custom_handler1_handler_filter_field_count.inc
+files[] = custom_handler1.views.inc
+files[] = includes/views/custom_handler1_handler_filter_field_count.inc
