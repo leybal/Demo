@@ -1,0 +1,98 @@
+<?php
+
+/**
+ * Implements hook_entity_info().
+ */
+function ticket1_entity_info() {
+  $info['ticket1'] = array(
+    'label' => t('ticket1 Entity'),
+    'controller class' => 'ticket1Controller',
+    'base table' => 'ticket1',
+    'uri callback' => 'ticket1_uri',
+    'fieldable' => TRUE,
+    'entity keys' => array(
+      'id' => 'tid' ,
+    ),
+    'bundle keys' => array(
+    ),
+    'static cache' => TRUE,
+
+    'bundles' => array(
+      'ticket1_standard' => array(
+        'label' => 'Standard ticket1',
+        'admin' => array(
+          'path' => 'admin/structure/ticket1/manage',
+          'access arguments' => array('administer ticket1 entities'),
+        ),
+      ),
+    ),
+
+    'view modes' => array(
+      'full' => array(
+        'label' => t('Full'),
+      ),
+      'short' => array(
+        'label' => t('Short'),
+      ),
+    ),
+  );
+
+  return $info;
+}
+
+
+/**
+ * Implements hook_menu().
+ */
+function entity_example_menu() {
+  $items['admin/structure/ticket1/manage'] = array(
+    'title' => 'Administer ticket1 entity type',
+    //'page callback' => 'entity_example_basic_list_entities',
+    'access arguments' => array('administer ticket1 entities'),
+  );
+}
+
+
+/**
+ * Implements hook_permission().
+ */
+function ticket1_permission() {
+  $permissions = array(
+    'administer ticket1 entities' => array(
+      'title' => t('Administer ticket1 entities'),
+    ),
+    'view any ticket1 entity' => array(
+      'title' => t('View ticket1 entity'),
+    ),
+    'edit any ticket1 entity' => array(
+      'title' => t('Edit ticket1 entity'),
+    ),
+    'create ticket1 entities' => array(
+      'title' => t('Create ticket1 Entities'),
+    ),
+    "delete ticket1 entities" => array(
+      'title' => t('Delete ticket1 Entities'),
+    ),
+  );
+  return $permissions;
+}
+
+
+/**
+ * Implements hook_field_extra_fields().
+ */
+function ticket1_field_extra_fields() {
+  $form_elements['seats'] = array(
+    'label' => t('Number of seats'),
+    'weight' => 0,
+  );
+  $display_elements['seats'] = array(
+    'label' => t('Number of seats'),
+    'weight' => 0,
+  );
+
+  $extra_fields['ticket1']['ticket1_standard']['form'] = $form_elements;
+  $extra_fields['ticket1']['ticket1_standard']['display'] = $display_elements;
+
+  return $extra_fields;
+}

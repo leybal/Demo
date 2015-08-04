@@ -1,0 +1,11 @@
+name = ticket1
+description = Entity type for ticket1.
+core = 7.x
+package = Demo
+dependencies[] = field
+configure = admin/structure/ticket1/manage
+
+; Information added by Drupal.org packaging script on 2015-03-11
+version = "7.x-1.x-dev"
+core = "7.x"
+

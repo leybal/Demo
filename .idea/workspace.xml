@@ -37,81 +37,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="custom_handler1.info" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/custom_handler1.info">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interval_select.info" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select.info">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="225">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interval_select.views.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select.views.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="450">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interval_select_handler_surface.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select_handler_surface.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4065">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interval_select.module" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select.module">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="interval_select_handler_prix.inc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select_handler_prix.inc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="3915">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="custom_handler1.module" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/custom_handler1.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="105" max-vertical-offset="225">
               <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom_handler1.views.inc" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom_handler1.views.inc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/custom_handler1.views.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0955414" vertical-offset="0" max-vertical-offset="942">
-              <caret line="6" column="53" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="225">
+              <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -120,18 +60,106 @@
       <file leaf-file-name="custom_handler1_handler_filter_field_count.inc" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/includes/views/custom_handler1_handler_filter_field_count.inc">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="780">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="780">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.info" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/views/views.info">
+      <file leaf-file-name="entity_example.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/examples/entity_example/entity_example.module">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="4980">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="23" />
+            <state vertical-scroll-proportion="-5.673077" vertical-offset="3410" max-vertical-offset="9615">
+              <caret line="247" column="11" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="11" />
+              <folding>
+                <element signature="e#7#603#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node.install" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/node/node.install">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-18.125" vertical-offset="810" max-vertical-offset="14265">
+              <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="90" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ticket1.install" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/ticket1/ticket1.install">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="885">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ticket1.info" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/ticket1/ticket1.info">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ticket1.module" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/ticket1/ticket1.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.35995623" vertical-offset="406" max-vertical-offset="1545">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="node.module" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/node/node.module">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.5" vertical-offset="46434" max-vertical-offset="62910">
+              <caret line="3136" column="4" selection-start-line="3136" selection-start-column="4" selection-end-line="3138" selection-end-column="6" />
+              <folding>
+                <marker date="1434566324000" expanded="true" signature="12013:12076" placeholder="SELECT times..." />
+                <marker date="1434566324000" expanded="true" signature="18272:18316" placeholder="SELECT 1 FRO..." />
+                <marker date="1434566324000" expanded="true" signature="54014:54041" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="54084:54217" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="59998:60046" placeholder="SELECT vid F..." />
+                <marker date="1434566324000" expanded="true" signature="62900:62955" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="71994:72037" placeholder="SELECT chang..." />
+                <marker date="1434566324000" expanded="true" signature="72344:72558" placeholder="SELECT r.vid..." />
+                <marker date="1434566324000" expanded="true" signature="75207:75267" placeholder="SELECT nid F..." />
+                <marker date="1434566324000" expanded="true" signature="78197:78273" placeholder="SELECT type ..." />
+                <marker date="1434566324000" expanded="true" signature="81018:81067" placeholder="SELECT modul..." />
+                <marker date="1434566324000" expanded="true" signature="90021:90185" placeholder="SELECT n.nid..." />
+                <marker date="1434566324000" expanded="true" signature="120978:121018" placeholder="SELECT nid F..." />
+                <marker date="1434566324000" expanded="true" signature="122411:122449" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="122545:122601" placeholder="SELECT nid F..." />
+                <marker date="1434566324000" expanded="true" signature="131225:131266" placeholder="SELECT name ..." />
+                <marker date="1434566324000" expanded="true" signature="132019:132047" placeholder="SELECT COUNT..." />
+                <marker date="1434566324000" expanded="true" signature="132151:132192" placeholder="SELECT name ..." />
+                <marker date="1434566324000" expanded="true" signature="132405:132462" placeholder="SELECT uid, ..." />
+                <marker date="1434566324000" expanded="true" signature="133284:133324" placeholder="SELECT 1 FRO..." />
+                <marker date="1434566324000" expanded="true" signature="133756:133798" placeholder="SELECT uid f..." />
+                <marker date="1434566324000" expanded="true" signature="136011:136045" placeholder="SELECT COUNT..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entity_example.test" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/examples/entity_example/entity_example.test">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="360" max-vertical-offset="2505">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -142,17 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/form_example_dynamic/form_example_dynamic.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/multistep/multistep.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/block1/block1.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/block1/block1.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/block1/block1.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/themehook/themehook.info" />
-        <option value="$PROJECT_DIR$/sites/all/modules/contrib/examples/theming_example/theming-example-text-form.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/themehook/themehook.module" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/themehook/themehook-div.tpl.php" />
-        <option value="$PROJECT_DIR$/sites/all/themes/bootstrap_extend/bootstrap_extend.info" />
-        <option value="$PROJECT_DIR$/sites/all/themes/omega_extend/omega_extend.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega_subtheme/omega_subtheme.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/omega_subtheme/page.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/bartik_subtheme/bartik_subtheme.info" />
@@ -193,6 +210,17 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/custom_handler1.inc" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/custom_handler1.info" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/custom_handler1.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/contrib/examples/entity_example/entity_example.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/tickets/entity_example.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/tickets/ticket.info" />
+        <option value="$PROJECT_DIR$/modules/node/node.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/tickets/tickets.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/tickets/tickets.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/tickets/tickets.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/ticket/ticket.info" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/ticket/ticket.install" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/ticket/ticket.module" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/ticket1/ticket1.module" />
       </list>
     </option>
   </component>
@@ -206,10 +234,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="83" />
-    <option name="y" value="52" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -380,34 +408,8 @@
               <option name="myItemId" value="custom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="interval_select" />
+              <option name="myItemId" value="ticket1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -434,48 +436,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom_handler1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom_handler1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,6 +465,102 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity_example" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -522,6 +578,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sites/all/modules/custom/tickets" />
+      <recent name="$PROJECT_DIR$/sites/all/modules/custom/" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom/alter_rad" />
       <recent name="$PROJECT_DIR$/sites/all/themes/bartik_subtheme" />
       <recent name="$PROJECT_DIR$/sites/all/modules/custom/demoform_alter" />
@@ -615,23 +673,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="52" width="1855" height="1084" extended-state="0" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17409326" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36683938" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32984003" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15057915" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.114726976" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25648096" sideWeight="0.49948186" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17981246" sideWeight="0.49948186" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20242691" sideWeight="0.50051814" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36683938" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34715027" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -705,76 +764,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/omega/omega/template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.125" vertical-offset="5994" max-vertical-offset="12180">
-          <caret line="422" column="15" selection-start-line="422" selection-start-column="9" selection-end-line="422" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bartik/bartik.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/form.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.246281" vertical-offset="46756" max-vertical-offset="70785">
-          <caret line="3130" column="15" selection-start-line="3130" selection-start-column="15" selection-end-line="3130" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/unicode.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.375" vertical-offset="7674" max-vertical-offset="10185">
-          <caret line="528" column="0" selection-start-line="528" selection-start-column="0" selection-end-line="528" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/themehook/themehook.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="540">
-          <caret line="24" column="81" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/common.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5976331" vertical-offset="38888" max-vertical-offset="125610">
-          <caret line="2612" column="0" selection-start-line="2612" selection-start-column="0" selection-end-line="2612" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/backup_migrate/backup_migrate.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35502958" vertical-offset="975" max-vertical-offset="28050">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/system/system.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35502958" vertical-offset="31245" max-vertical-offset="60615">
-          <caret line="2094" column="0" selection-start-line="2094" selection-start-column="0" selection-end-line="2094" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/database/database.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35502958" vertical-offset="36165" max-vertical-offset="45615">
-          <caret line="2426" column="0" selection-start-line="2426" selection-start-column="0" selection-end-line="2426" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/lock.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35502958" vertical-offset="1860" max-vertical-offset="4155">
-          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/errors.inc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33241758" vertical-offset="689" max-vertical-offset="4335">
@@ -997,47 +986,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4980">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select_handler_prix.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="3915">
+        <state vertical-scroll-proportion="-0.6687898" vertical-offset="630" max-vertical-offset="3915">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
+        <state vertical-scroll-proportion="0.12738854" vertical-offset="0" max-vertical-offset="942">
           <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select_handler_surface.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="4065">
+        <state vertical-scroll-proportion="-0.3821656" vertical-offset="360" max-vertical-offset="4065">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select.views.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="450">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="9" selection-end-column="6" />
-          <folding />
+        <state vertical-scroll-proportion="0.15923567" vertical-offset="0" max-vertical-offset="942">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/interval_select/interval_select.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.015527951" vertical-offset="0" max-vertical-offset="966">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1045,30 +1028,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
           <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/custom_handler1.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="225">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="225">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/includes/views/custom_handler1_handler_filter_field_count.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="780">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/custom_handler1.views.inc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0955414" vertical-offset="0" max-vertical-offset="942">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="225">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/examples/examples.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.050167225" vertical-offset="0" max-vertical-offset="897">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/examples/entity_example/entity_example.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08361204" vertical-offset="0" max-vertical-offset="897">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/custom_handler1/includes/views/custom_handler1_handler_filter_field_count.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="780">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/examples/entity_example/entity_example.test">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2505">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/examples/entity_example/entity_example.install">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2508513" vertical-offset="274" max-vertical-offset="1155">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/node/node.install">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.125" vertical-offset="810" max-vertical-offset="14265">
+          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="90" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/ticket1/ticket1.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/ticket1/ticket1.install">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="885">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/node/node.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.5" vertical-offset="46434" max-vertical-offset="62910">
+          <caret line="3136" column="4" selection-start-line="3136" selection-start-column="4" selection-end-line="3138" selection-end-column="6" />
+          <folding>
+            <marker date="1434566324000" expanded="true" signature="12013:12076" placeholder="SELECT times..." />
+            <marker date="1434566324000" expanded="true" signature="18272:18316" placeholder="SELECT 1 FRO..." />
+            <marker date="1434566324000" expanded="true" signature="54014:54041" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="54084:54217" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="59998:60046" placeholder="SELECT vid F..." />
+            <marker date="1434566324000" expanded="true" signature="62900:62955" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="71994:72037" placeholder="SELECT chang..." />
+            <marker date="1434566324000" expanded="true" signature="72344:72558" placeholder="SELECT r.vid..." />
+            <marker date="1434566324000" expanded="true" signature="75207:75267" placeholder="SELECT nid F..." />
+            <marker date="1434566324000" expanded="true" signature="78197:78273" placeholder="SELECT type ..." />
+            <marker date="1434566324000" expanded="true" signature="81018:81067" placeholder="SELECT modul..." />
+            <marker date="1434566324000" expanded="true" signature="90021:90185" placeholder="SELECT n.nid..." />
+            <marker date="1434566324000" expanded="true" signature="120978:121018" placeholder="SELECT nid F..." />
+            <marker date="1434566324000" expanded="true" signature="122411:122449" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="122545:122601" placeholder="SELECT nid F..." />
+            <marker date="1434566324000" expanded="true" signature="131225:131266" placeholder="SELECT name ..." />
+            <marker date="1434566324000" expanded="true" signature="132019:132047" placeholder="SELECT COUNT..." />
+            <marker date="1434566324000" expanded="true" signature="132151:132192" placeholder="SELECT name ..." />
+            <marker date="1434566324000" expanded="true" signature="132405:132462" placeholder="SELECT uid, ..." />
+            <marker date="1434566324000" expanded="true" signature="133284:133324" placeholder="SELECT 1 FRO..." />
+            <marker date="1434566324000" expanded="true" signature="133756:133798" placeholder="SELECT uid f..." />
+            <marker date="1434566324000" expanded="true" signature="136011:136045" placeholder="SELECT COUNT..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/contrib/examples/entity_example/entity_example.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.673077" vertical-offset="3410" max-vertical-offset="9615">
+          <caret line="247" column="11" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="11" />
+          <folding>
+            <element signature="e#7#603#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/ticket1/ticket1.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35995623" vertical-offset="406" max-vertical-offset="1545">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
           <folding />
         </state>
       </provider>
