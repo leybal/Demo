@@ -43,14 +43,14 @@ function ticket1_entity_info() {
 
 /**
  * Implements hook_menu().
+ * Made with page_manager
  */
-function entity_example_menu() {
+/*function entity_example_menu() {
   $items['admin/structure/ticket1/manage'] = array(
     'title' => 'Administer ticket1 entity type',
-    //'page callback' => 'entity_example_basic_list_entities',
     'access arguments' => array('administer ticket1 entities'),
   );
-}
+}*/
 
 
 /**
