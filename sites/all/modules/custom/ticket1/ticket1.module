@@ -6,7 +6,7 @@
 function ticket1_entity_info() {
   $info['ticket1'] = array(
     'label' => t('ticket1 Entity'),
-    'controller class' => 'ticket1Controller',
+    'controller class' => 'Ticket1Controller',
     'base table' => 'ticket1',
     'uri callback' => 'ticket1_uri',
     'fieldable' => TRUE,
@@ -21,7 +21,7 @@ function ticket1_entity_info() {
       'ticket1_standard' => array(
         'label' => 'Standard ticket1',
         'admin' => array(
-          'path' => 'admin/structure/ticket1/manage',
+          'path' => 'admin/structure/tickets/manage',
           'access arguments' => array('administer ticket1 entities'),
         ),
       ),
@@ -40,17 +40,36 @@ function ticket1_entity_info() {
   return $info;
 }
 
-
 /**
  * Implements hook_menu().
- * Made with page_manager
  */
-/*function entity_example_menu() {
-  $items['admin/structure/ticket1/manage'] = array(
+
+function ticket1_menu() {
+  $items['admin/structure/tickets/manage'] = array(
     'title' => 'Administer ticket1 entity type',
+    'page callback' => 'ticket1_list_entities',
     'access arguments' => array('administer ticket1 entities'),
   );
-}*/
+
+  $items['admin/structure/tickets/manage/list'] = array(
+    'title' => 'List',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+
+  $items['admin/structure/tickets/manage/add'] = array(
+    'title' => 'Add a Ticket1',
+    'page callback' => 'ticket1_add',
+    'access arguments' => array('create ticket1 entities'),
+    'type' => MENU_LOCAL_ACTION,
+  );
+
+  $items['ticket1/get'] = array(
+    'title' => 'Get a Ticket1',
+    'page callback' => 'ticket1_get',
+    'access arguments' => array('create ticket1 entities'),
+  );
+
+}
 
 
 /**
@@ -95,4 +114,51 @@ function ticket1_field_extra_fields() {
   $extra_fields['ticket1']['ticket1_standard']['display'] = $display_elements;
 
   return $extra_fields;
+}
+
+
+function ticket1_load($id = NULL, $reset = FALSE) {
+  $ids = (isset($id) ? array($id) : array());
+  $tickets = ticket1_load_multiple($ids, array(), $reset);
+  return $tickets ? reset($tickets) : FALSE;
+}
+
+function ticket1_load_multiple($ids = FALSE, $conditions = array(), $reset = FALSE) {
+  return entity_load('ticket1', $ids, $conditions, $reset);
+}
+
+function ticket1_uri($basic) {
+  return array(
+    'path' => 'ticket1/' . $basic->tid,
+  );
+}
+
+
+function ticket1_list_entities() {
+  $content = array();
+  $entities = ticket1_load_multiple();
+  if (!empty($entities)) {
+    foreach ($entities as $entity) {
+      $rows[] = array(
+        'data' => array(
+          'id' => $entity->tid,
+          'seats' => $entity->seats,
+        ),
+      );
+    }
+    // Put our entities into a themed table. See theme_table() for details.
+    $content['entity_table'] = array(
+      '#theme' => 'table',
+      '#rows' => $rows,
+      '#header' => array(t('ID'), t('Num of Seats')),
+    );
+  }
+  else {
+    // There were no entities. Tell the user.
+    $content[] = array(
+      '#type' => 'item',
+      '#markup' => t('No ticket1 entities.'),
+    );
+  }
+  return $content;
 }
