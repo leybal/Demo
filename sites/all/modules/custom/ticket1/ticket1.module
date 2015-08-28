@@ -1,43 +1,27 @@
 <?php
 
 /**
- * Implements hook_entity_info().
+ * Implements hook_permission().
  */
-function ticket1_entity_info() {
-  $info['ticket1'] = array(
-    'label' => t('ticket1 Entity'),
-    'controller class' => 'Ticket1Controller',
-    'base table' => 'ticket1',
-    'uri callback' => 'ticket1_uri',
-    'fieldable' => TRUE,
-    'entity keys' => array(
-      'id' => 'tid' ,
+function ticket1_permission() {
+  $permissions = array(
+    'administer ticket1 entities' => array(
+      'title' => t('Administer ticket1 entities'),
     ),
-    'bundle keys' => array(
+    'view ticket1 entity' => array(
+      'title' => t('View ticket1 entity'),
     ),
-    'static cache' => TRUE,
-
-    'bundles' => array(
-      'ticket1_standard' => array(
-        'label' => 'Standard ticket1',
-        'admin' => array(
-          'path' => 'admin/structure/tickets/manage',
-          'access arguments' => array('administer ticket1 entities'),
-        ),
-      ),
+    'edit ticket1 entity' => array(
+      'title' => t('Edit ticket1 entity'),
     ),
-
-    'view modes' => array(
-      'full' => array(
-        'label' => t('Full'),
-      ),
-      'short' => array(
-        'label' => t('Short'),
-      ),
+    'create ticket1 entities' => array(
+      'title' => t('Create ticket1 Entities'),
+    ),
+    "delete ticket1 entities" => array(
+      'title' => t('Delete ticket1 Entities'),
     ),
   );
-
-  return $info;
+  return $permissions;
 }
 
 /**
@@ -63,38 +47,85 @@ function ticket1_menu() {
     'type' => MENU_LOCAL_ACTION,
   );
 
-  $items['ticket1/get'] = array(
-    'title' => 'Get a Ticket1',
-    'page callback' => 'ticket1_get',
-    'access arguments' => array('create ticket1 entities'),
+//  $items['ticket1/get'] = array(
+//    'title' => 'Get a Ticket1',
+//    'page callback' => 'ticket1_get',
+//    'access arguments' => array('create ticket1 entities'),
+//  );
+
+  $items['ticket1/%ticket'] = array(
+    'title callback' => 'ticket1_title',
+    'title arguments' => array(1),
+    'page callback' => 'ticket1_view',
+    'page arguments' => array(1),
+    'access arguments' => array('view ticket1 entity'),
+  );
+
+  // 'View' tab for an individual entity page.
+  $items['ticket1/%ticket/view'] = array(
+    'title' => 'View',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10,
+  );
+
+  // 'Edit' tab for an individual entity page.
+  $items['ticket1/%ticket/edit'] = array(
+    'title' => 'Edit',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ticket1_form', 1),
+    'access arguments' => array('edit ticket1 entity'),
+    'type' => MENU_LOCAL_TASK,
+  );
+
+  $items['ticket1/%ticket/delete'] = array(
+    'title' => 'Delete',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ticket1_delete_form', 1),
+    'access arguments' => array('delete ticket1 entity'),
+    'type' => MENU_LOCAL_TASK,
   );
 
 }
 
 
 /**
- * Implements hook_permission().
+ * Implements hook_entity_info().
  */
-function ticket1_permission() {
-  $permissions = array(
-    'administer ticket1 entities' => array(
-      'title' => t('Administer ticket1 entities'),
+function ticket1_entity_info() {
+  $info['ticket1'] = array(
+    'label' => t('Ticket1'),
+    'controller class' => 'Ticket1Controller',
+    'base table' => 'ticket1',
+    'uri callback' => 'ticket1_uri',
+    'fieldable' => TRUE,
+    'entity keys' => array(
+      'id' => 'tid' ,
     ),
-    'view any ticket1 entity' => array(
-      'title' => t('View ticket1 entity'),
+    'bundle keys' => array(
     ),
-    'edit any ticket1 entity' => array(
-      'title' => t('Edit ticket1 entity'),
+    'static cache' => TRUE,
+    'bundles' => array(
+      'ticket1' => array(
+        'label' => 'Standard Ticket',
+        'admin' => array(
+          'path' => 'admin/structure/tickets/manage',
+          'access arguments' => array('administer ticket1 entities'),
+        ),
+      ),
     ),
-    'create ticket1 entities' => array(
-      'title' => t('Create ticket1 Entities'),
-    ),
-    "delete ticket1 entities" => array(
-      'title' => t('Delete ticket1 Entities'),
+    'view modes' => array(
+      'full' => array(
+        'label' => t('Full'),
+      ),
+      'short' => array(
+        'label' => t('Short'),
+      ),
     ),
   );
-  return $permissions;
+
+  return $info;
 }
+
 
 
 /**
@@ -116,6 +147,51 @@ function ticket1_field_extra_fields() {
   return $extra_fields;
 }
 
+function ticket1_list_entities() {
+  $content = array();
+  // Load all of our entities.
+  $entities = ticket1_load_multiple();
+
+  $destination = drupal_get_destination();
+
+  if (!empty($entities)) {
+    foreach ($entities as $entity) {
+      // Create tabular rows for our entities.
+      $rows[] = array(
+        'data' => array(
+          'id' => $entity->tid,
+          'seats' => $entity->seats,
+          'operations' => array(
+            'data' => array(
+              '#type' => 'link',
+              '#title' => t('edit'),
+              '#href' => "ticket1/$entity->tid/edit",
+              '#options' => array('query' => $destination)
+            )
+          ),
+        ),
+      );
+    }
+
+    // Put our entities into a themed table. See theme_table() for details.
+    $content['entity_table'] = array(
+      '#theme' => 'table',
+      '#rows' => $rows,
+      '#header' => array(t('ID'), t('Num of Seats'), t('Operations')),
+    );
+  }
+
+  else {
+    // There were no entities. Tell the user.
+    $content[] = array(
+      '#type' => 'item',
+      '#markup' => t('There are no tickets.'),
+    );
+  }
+
+  return $content;
+}
+
 
 function ticket1_load($id = NULL, $reset = FALSE) {
   $ids = (isset($id) ? array($id) : array());
@@ -127,38 +203,61 @@ function ticket1_load_multiple($ids = FALSE, $conditions = array(), $reset = FAL
   return entity_load('ticket1', $ids, $conditions, $reset);
 }
 
-function ticket1_uri($basic) {
+function ticket1_save(&$entity) {
+  return entity_get_controller('ticket1')->save($entity);
+}
+
+function ticket1_uri($ticket) {
   return array(
-    'path' => 'ticket1/' . $basic->tid,
+    'path' => 'ticket1/' . $ticket->tid,
   );
 }
 
+function ticket1_add() {
+  $entity = entity_get_controller('ticket1')->create();
+  return drupal_get_form('ticket1_form', $entity);
+}
 
-function ticket1_list_entities() {
-  $content = array();
-  $entities = ticket1_load_multiple();
-  if (!empty($entities)) {
-    foreach ($entities as $entity) {
-      $rows[] = array(
-        'data' => array(
-          'id' => $entity->tid,
-          'seats' => $entity->seats,
-        ),
-      );
-    }
-    // Put our entities into a themed table. See theme_table() for details.
-    $content['entity_table'] = array(
-      '#theme' => 'table',
-      '#rows' => $rows,
-      '#header' => array(t('ID'), t('Num of Seats')),
-    );
-  }
-  else {
-    // There were no entities. Tell the user.
-    $content[] = array(
-      '#type' => 'item',
-      '#markup' => t('No ticket1 entities.'),
-    );
-  }
-  return $content;
+
+function ticket1_form($form, &$form_state, $entity) {
+  $form['seats'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Seats'),
+    '#required' => TRUE,
+    '#default_value' => $entity->seats,
+  );
+
+  $form['#entity'] = array(
+    '#type' => 'value',
+    '#value' => $entity,
+  );
+
+  $form_state['ticket1'] = $entity;
+
+  field_attach_form('ticket1', $entity, $form, $form_state);
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Save'),
+    '#weight' => 100,
+  );
+
+  return $form;
+}
+
+//ticket_form_validate
+function ticket1_form_validate($form, &$form_state) {
+  field_attach_form_validate('ticket1', $form_state['ticket1'], $form, $form_state);
+}
+
+//ticket_form_submit
+function ticket1_form_submit($form, &$form_state) {
+  $entity = $form_state['ticket1'];
+
+  entity_form_submit_build_entity('ticket1', $entity, $form, $form_state);
+
+  $entity = ticket1_save($entity);
+
+  // $form_state['redirect'] = 'examples/entity_example/basic/' . $entity->basic_id;
+  // $form_state['redirect'] = 'admin/structure/tickets/manage';
 }

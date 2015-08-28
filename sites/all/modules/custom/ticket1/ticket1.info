@@ -3,9 +3,10 @@ description = Entity type for ticket1.
 core = 7.x
 package = Demo
 dependencies[] = field
+dependencies[] = entity
 configure = admin/structure/ticket1/manage
 
-files[] = clasess/Ticket1Controller.inc
+files[] = classes/Ticket1Controller.inc
 
 ; Information added by Drupal.org packaging script on 2015-03-11
 version = "7.x-1.x-dev"

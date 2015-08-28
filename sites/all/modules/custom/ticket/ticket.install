@@ -12,28 +12,25 @@
  *
  * @ingroup entity_example
  */
-function ticket1_schema() {
+function ticket_schema() {
   $schema = array();
-
-  // The name of the table can be any name we choose. However, namespacing the
-  // table with the module name is best practice.
-  $schema['ticket1'] = array(
-    'description' => 'The base table for our ticket1.',
+  $schema['ticket'] = array(
+    'description' => 'The base table for our ticket.',
     'fields' => array(
       'tid' => array(
-        'description' => 'Primary key of the ticket1 entity.',
+        'description' => 'Primary key of the ticket.',
         'type' => 'serial',
         'unsigned' => TRUE,
         'not null' => TRUE,
       ),
       'uid' => array(
-        'description' => 'The {users}.uid that owns this ticket1.',
+        'description' => 'Owner of the ticket.',
         'type' => 'int',
         'not null' => TRUE,
         'default' => 0,
       ),
       'seats' => array(
-        'description' => 'Number of seats',
+        'description' => 'Seats number for the ticket.',
         'type' => 'int',
         'not null' => TRUE,
         'default' => 0,
@@ -55,5 +52,3 @@ function ticket1_schema() {
 
   return $schema;
 }
-
-
