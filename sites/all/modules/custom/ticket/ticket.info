@@ -10,3 +10,6 @@ dependencies[] = ctools
 configure = admin/structure/ticket/manage
 
 files[] = classes/TicketController.inc
+files[] = classes/TicketViewsController.inc
+
+files[] = views/views_handler_field_ticket.inc
